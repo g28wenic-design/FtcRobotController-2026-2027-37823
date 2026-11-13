@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.pedro.procedures.MecanumTuner;
-import org.firstinspires.ftc.teamcode.pedro.procedures.ThreeWheelTuner;
+import org.firstinspires.ftc.teamcode.pedro.procedures.ThreeWheelIMUTuner;
 
 public class Constants {
 
@@ -33,8 +33,8 @@ public class Constants {
     }
 
     @Tuner
-    public static Procedure threeWheelTuner() {
-        return new ThreeWheelTuner();
+    public static Procedure threeWheelIMUTuner() {
+        return new ThreeWheelIMUTuner();
     }
     public static Follower create(HardwareMap h) {
         // return new Follower(Drivetrain, Localizer, Foresight);
